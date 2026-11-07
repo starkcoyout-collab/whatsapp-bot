@@ -1,6 +1,9 @@
 node_modules/
+baileys_auth_info/
 .wwebjs_auth/
 .wwebjs_cache/
+data/*.json
+data/*.tmp
 .env
 *.log
 .DS_Store

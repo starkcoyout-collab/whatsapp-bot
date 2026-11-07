@@ -1,18 +1,18 @@
 {
   "name": "alquora-shiffer-whatsapp-bot",
-  "version": "1.0.0",
-  "description": "بوت واتساب عربي بسيط يعمل عبر WhatsApp Web ومكتبات npm، بأوامر وقائمة تفاعلية نصية.",
+  "version": "2.0.0",
+  "private": true,
+  "description": "بوت واتساب عربي بـ Node.js وBaileys مع اقتران برمز وأوامر منظمة.",
   "main": "src/index.js",
   "type": "commonjs",
   "scripts": {
     "start": "node src/index.js",
-    "check": "node --check src/index.js && node --check src/commands.js && node --check src/menu.js"
+    "check": "node --check src/index.js && node --check src/config.js && node --check src/commands/index.js && node --check src/commands/general.js && node --check src/commands/groups.js && node --check src/handlers/message.js && node --check src/lib/menu.js && node --check src/lib/store.js && node --check src/lib/permissions.js && node --check src/lib/calculator.js && node --check src/lib/text.js && node --check src/lib/rate-limit.js"
   },
-  "engines": {
-    "node": ">=20"
-  },
+  "engines": { "node": ">=20.0.0" },
   "dependencies": {
-    "qrcode-terminal": "^0.12.0",
-    "whatsapp-web.js": "^1.26.0"
+    "@whiskeysockets/baileys": "7.0.0-rc.14",
+    "dotenv": "^16.4.7",
+    "pino": "^9.6.0"
   }
 }
