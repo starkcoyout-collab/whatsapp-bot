@@ -1,0 +1,18 @@
+{
+  "name": "alquora-shiffer-whatsapp-bot",
+  "version": "1.0.0",
+  "description": "بوت واتساب عربي بسيط يعمل عبر WhatsApp Web ومكتبات npm، بأوامر وقائمة تفاعلية نصية.",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js",
+    "check": "node --check src/index.js && node --check src/commands.js && node --check src/menu.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.26.0"
+  }
+}
